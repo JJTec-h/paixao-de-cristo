@@ -1,65 +1,134 @@
-body{
-    max-width: 1200px;
+body {
     margin: 0 auto;
-    border: solid 1px;
-    height: 2000px;
-  
+
 }
 
-.home{
+.home {
     height: 100vh;
     width: 100%;
     position: relative;
     background-image: url("../img/fundo.jpg");
-    background-size:cover ;
+    background-size: cover;
     background-position: center;
     height: 100vh;
     overflow: hidden;
     background-color: #D5AD7A;
 }
 
-.imgFundoAnimacao{
-    width: 100%;
+.caixaImgFogo{
     position: absolute;
+    bottom: 50px;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    animation: textOpasity 5s ;
+}
+
+@keyframes textOpasity {
+    0%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.caixaImgFogo h1{
+    background-image: url("../img/flame.gif");
+    background-size: contain;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 1000;
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+.imgFundoAnimacao {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     bottom: -20px;
-    animation: move 3s linear  ;
+    animation: move 3s linear;
 }
 
 @keyframes move {
-    0%{
+    0% {
         bottom: -530px;
     }
 
-    100%{
+    100% {
         bottom: 0px;
     }
 
 }
 
-.linksPagina{
+.linksPagina p:hover {
+   border-bottom: solid 2px rgba(0, 0, 0, 0.756);
+    transition: 0.2s;
+}
+
+
+.linksPagina p {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.linksPagina {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 800px;
-    margin-left: 100px;
+    height: 50px;
+    border-radius: 10px;
     position: fixed;
-    left: 50%;
-    transform: translate(-50%);
+    right: 15%;
     top: 20px;
     font-size: 18px;
-    color: #C1C1C1;
+    color: #ffffff;
     font-family: sans-serif;
     font-weight: bold;
-}
-
-.logoPaixao{
-    width: 80px;
-    position: absolute;
-    left: -230px;
+    cursor: pointer;
+    backdrop-filter: blur(20px);
 }
 
 
-.a{
-height: 100vh;
-background-color: #D5AD7A;
+@media screen and (max-width:1000px) {
+    .linksPagina {
+        width: 500px;
+        right: 9%;
+
+    }
+}
+
+
+@media screen and (max-width:790px) {
+    .linksPagina {
+        width: 400px;
+        right: 9%;
+
+    }
+}
+
+.logoPaixao {
+    width: 120px;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+}
+
+
+.a {
+    height: 300px;
+    background-color: #D5AD7A;
 }
