@@ -1,0 +1,65 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: solid 1px;
+    height: 2000px;
+  
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../img/fundo.jpg");
+    background-size:cover ;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #D5AD7A;
+}
+
+.imgFundoAnimacao{
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    animation: move 3s linear  ;
+}
+
+@keyframes move {
+    0%{
+        bottom: -530px;
+    }
+
+    100%{
+        bottom: 0px;
+    }
+
+}
+
+.linksPagina{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    margin-left: 100px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+    font-size: 18px;
+    color: #C1C1C1;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.logoPaixao{
+    width: 80px;
+    position: absolute;
+    left: -230px;
+}
+
+
+.a{
+height: 100vh;
+background-color: #D5AD7A;
+}
