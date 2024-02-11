@@ -17,26 +17,37 @@ body {
 
 .caixaImgFogo{
     position: absolute;
-    bottom: 50px;
+    top: 200px;
+    width: 900px;
     font-size: 30px;
     left: 50%;
     transform: translate(-50%);
     color: white;
-    width: 100%;
     text-align: center;
-    animation: textOpasity 5s ;
+    animation: textOpasity 4s  linear;
+    background-image: url("../img/pergaminhoTexto2.png");
+    background-size: cover;
 }
 
+
+
 @keyframes textOpasity {
+
     0%{
-       opacity: 0;
+       top: -100px;
     }
-    50%{
-        opacity: 0;
+
+    70%{
+        top:-100px;
+            
     }
+
     100%{
-        opacity: 1;
+        top:200px;
+        
     }
+    
+   
 }
 
 .caixaImgFogo h1{
@@ -70,19 +81,6 @@ body {
 
 }
 
-.linksPagina p:hover {
-   border-bottom: solid 2px rgba(0, 0, 0, 0.756);
-    transition: 0.2s;
-}
-
-
-.linksPagina p {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .linksPagina {
     display: flex;
@@ -102,6 +100,18 @@ body {
     backdrop-filter: blur(20px);
 }
 
+
+
+.linksPagina p {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.linksPagina p:hover{
+    border-bottom: 3px solid rgb(0, 0, 0)
+}
 
 @media screen and (max-width:1000px) {
     .linksPagina {
