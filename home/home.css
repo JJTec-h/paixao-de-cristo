@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 body {
     margin: 0 auto;
-
+    background-color: #D5AD7A;
+    height: 1000px;
 }
 
 .home {
@@ -13,52 +16,6 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: #D5AD7A;
-}
-
-.caixaImgFogo{
-    position: absolute;
-    top: 200px;
-    width: 900px;
-    font-size: 30px;
-    left: 50%;
-    transform: translate(-50%);
-    color: white;
-    text-align: center;
-    animation: textOpasity 4s  linear;
-    background-image: url("../img/pergaminhoTexto2.png");
-    background-size: cover;
-}
-
-
-
-@keyframes textOpasity {
-
-    0%{
-       top: -100px;
-    }
-
-    70%{
-        top:-100px;
-            
-    }
-
-    100%{
-        top:200px;
-        
-    }
-    
-   
-}
-
-.caixaImgFogo h1{
-    background-image: url("../img/flame.gif");
-    background-size: contain;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 1000;
-    font-family: sans-serif;
-    font-size: 70px;
 }
 
 .imgFundoAnimacao {
@@ -82,6 +39,14 @@ body {
 }
 
 
+.logoPaixao {
+    width: 120px;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    z-index: 1;
+}
+
 .linksPagina {
     display: flex;
     justify-content: space-evenly;
@@ -100,17 +65,80 @@ body {
     backdrop-filter: blur(20px);
 }
 
-
-
-.linksPagina p {
+.linksPagina a {
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    transition: 0.2s;
 }
-.linksPagina p:hover{
-    border-bottom: 3px solid rgb(0, 0, 0)
+
+.linksPagina a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0)
+}
+
+.caixaImgFogo {
+    position: absolute;
+    top: 200px;
+    width: 900px;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-align: center;
+    animation: textPosition 4s linear;
+    background-image: url("../img/pergaminhoTexto2.png");
+    background-size: cover;
+}
+
+@keyframes textPosition {
+
+    0% {
+        top: -100px;
+    }
+
+    70% {
+        top: -100px;
+
+    }
+
+    100% {
+        top: 200px;
+
+    }
+
+
+}
+
+.caixaImgFogo h1 {
+    background-image: url("../img/flame.gif");
+    background-size: contain;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 70px;
+    font-family: 'Lora', serif;
+    letter-spacing: 3px;
+    animation: opacityText 5s linear;
+}
+
+@keyframes opacityText {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -130,15 +158,85 @@ body {
     }
 }
 
-.logoPaixao {
-    width: 120px;
-    position: fixed;
-    left: 20px;
-    top: 10px;
-}
-
-
 .a {
     height: 300px;
     background-color: #D5AD7A;
 }
+
+
+main {
+    width: 100%;
+}
+
+
+.painelHistoria {
+    position: relative;
+    margin-top: 180px;
+    display: flex;
+    height: 100vh;
+   
+}
+
+
+h2 {
+    font-size: 50px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: "Berkshire Swash", serif;
+    color: #4C4223;
+}
+
+.imgBlur {
+    width: calc(100% - 20px);
+    max-width: 900px;
+    height: 600px;
+    border-radius: 10px;
+    background-image: url('../img/imgPaixao.jpg');
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.imgConteudo{
+    width: calc(100% - 100px);
+    max-width: 800px;
+    margin:  auto ;
+    display: grid;
+    margin-top: 60px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+}
+
+.imgHistoria{
+    width: 400px;
+    height: 300px;
+    background-image: url('../img/imgPaixao.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.imgTexto{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+
+.imgTexto p{
+    width: 300px;
+    height: 300px;
+    text-align: start;
+    margin-left: 10px;
+}
+
+
+
