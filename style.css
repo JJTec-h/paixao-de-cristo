@@ -5,7 +5,9 @@ body {
     margin: 0 auto;
     background-color: #000000;
     height: 1000px;
+    position: relative;
 }
+
 
 .home {
     height: 100vh;
@@ -19,8 +21,17 @@ body {
     margin-bottom: 400px;
 }
 
+.logoPaixao {
+    width: 120px;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    z-index: 2;
+}
+
 .imgFundoAnimacao {
-    width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -40,13 +51,7 @@ body {
 }
 
 
-.logoPaixao {
-    width: 120px;
-    position: fixed;
-    left: 20px;
-    top: 10px;
-    z-index: 2;
-}
+
 
 .linksPagina {
     display: flex;
@@ -63,7 +68,6 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     cursor: pointer;
-    backdrop-filter: blur(20px);
     z-index: 1;
 }
 
@@ -80,7 +84,7 @@ body {
 }
 
 .linksPagina a:hover {
-    border-bottom: 2px solid rgb(0, 0, 0)
+    border-bottom: 2px solid rgb(255, 255, 255)
 }
 
 .caixaImgFogo {
@@ -107,7 +111,7 @@ body {
         top: -100px;
     }
 
-    70% {
+    60% {
         top: -100px;
 
     }
@@ -260,7 +264,7 @@ h3 {
 
 
 .data {
-    width: 800px;
+    width: 200px;
     height: 600px;
     background-color: gray;
     border-radius: 20px;
@@ -278,7 +282,6 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .gridPatrocinadores {
@@ -307,7 +310,7 @@ h3 {
 }
 
 
-.imgPergamino{
+.imgPergamino {
     background-image: url('./img/pergaminho.png');
     background-size: cover;
     background-position: center;
@@ -318,37 +321,59 @@ h3 {
     align-items: center;
 }
 
-.textContatos h2{
+.textContatos h2 {
     color: #4C4223;
 }
-.textContatos p{
+
+.textContatos p {
     color: #4C4223;
     font-weight: 100;
 }
 
 
 
-.iconContato{
+.iconContato {
     display: flex;
-    justify-content: space-between;
-    width: 400px;
-    
-    
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
 }
-.iconContato p{
+
+.painelLinksContatos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.painelLinksContatos div>p {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.iconContato div {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.iconContato p {
     margin: 0;
     color: black;
 }
 
-.iconContato div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
 .iconContato img {
     width: 25px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.iconContato img:hover {
+    transform: scale(1.2);
 }
 
 .conteudoPergaminho {
@@ -361,16 +386,187 @@ h3 {
 }
 
 
-.textFinal{
+.textFinal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.textFinal p{
+.textFinal p {
     color: #4C4223;
     font-family: 'Berkshire Swash';
     font-size: 35px;
     margin: 0;
 }
+
+.rodaPe {
+    width: 100%;
+    height: 150px;
+    border-top: solid 1px #2eb4e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rodaPe p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 5px;
+    font-size: 8px;
+
+}
+
+.painelImg {
+    background-image: linear-gradient(90deg, transparent, transparent, transparent, transparent, transparent, transparent, #2eb4e0);
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: girar 5s linear infinite;
+    position: relative;
+}
+
+
+@keyframes girar {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(-360deg);
+    }
+}
+
+.imgLogo {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.painelImjJJTech {
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.painelImjJJTech img {
+    width: 23px;
+    cursor: pointer;
+}
+
+.painelImjJJTech img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+/* mobile */
+
+.painelMenu {
+    width: 0;
+    height: 100%;
+    background-color: #000000d5;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.linksPaginaMobile{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.linksPaginaMobile a{
+    padding: 14px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Berkshire Swash';
+    text-align: center;
+    text-decoration: none;
+    background-image: url('./img/pergaminhoTexto2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.logoImgMenu{
+    width: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menuAtivo{
+    width: 50%;
+    transition: all 1s;
+}
+
+.menu {
+    position: fixed;
+    width: 35px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
+@media screen and (max-width:580px) {
+
+    .logoPaixao{
+        display: none;
+        
+    }
+
+    .linksPagina {
+       display: none;
+    }
+
+    .painelMenu{
+        display: flex;
+    }
+
+    /*home*/
+    .imgFundoAnimacao{
+        height: 230px;
+    }
+
+    .caixaImgFogo{
+        width: 400px;
+        height: 70px;
+        animation: textPosition 2s linear;
+    }
+
+    .caixaImgFogo h1{
+        font-size: 40px;
+        letter-spacing: 0;
+        animation: opacityText 4s linear;
+    }
+
+    
+    
+}
+
