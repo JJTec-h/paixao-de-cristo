@@ -10,7 +10,7 @@ body {
 
 
 .home {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     position: relative;
     background-image: url("../img/fundo.jpg");
@@ -135,6 +135,7 @@ body {
     font-family: 'Lora', serif;
     letter-spacing: 3px;
     animation: opacityText 5s linear;
+    z-index: 1;
 }
 
 
@@ -479,7 +480,7 @@ h3 {
 
 .painelMenu {
     width: 0;
-    height: 100%;
+    height: 100vh;
     background-color: #000000d5;
     position: fixed;
     overflow: hidden;
@@ -487,17 +488,17 @@ h3 {
     display: none;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.linksPaginaMobile{
+.linksPaginaMobile {
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.linksPaginaMobile a{
+.linksPaginaMobile a {
     padding: 14px;
     color: black;
     font-size: 18px;
@@ -509,7 +510,7 @@ h3 {
     background-position: center;
 }
 
-.logoImgMenu{
+.logoImgMenu {
     width: 100px;
     position: absolute;
     bottom: 30px;
@@ -517,9 +518,9 @@ h3 {
     transform: translate(-50%);
 }
 
-.menuAtivo{
+.menuAtivo {
     width: 50%;
-    transition: all 1s;
+    transition: 1s;
 }
 
 .menu {
@@ -536,37 +537,37 @@ h3 {
 
 @media screen and (max-width:580px) {
 
-    .logoPaixao{
+    .logoPaixao {
         display: none;
-        
+
     }
 
     .linksPagina {
-       display: none;
+        display: none;
     }
 
-    .painelMenu{
+    .painelMenu {
         display: flex;
     }
 
     /*home*/
-    .imgFundoAnimacao{
+    .imgFundoAnimacao {
         height: 230px;
     }
-
-    .caixaImgFogo{
+    .caixaImgFogo {
         width: 400px;
         height: 70px;
         animation: textPosition 2s linear;
+        margin: 0 auto;
     }
 
-    .caixaImgFogo h1{
+    .caixaImgFogo h1 {
         font-size: 40px;
         letter-spacing: 0;
         animation: opacityText 4s linear;
+        margin: 0;
     }
 
-    
-    
-}
 
+
+}
