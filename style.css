@@ -99,7 +99,7 @@ body {
     transform: translate(-50%);
     color: white;
     text-align: center;
-    animation: textPosition 4s linear;
+    animation: textPosition 3s linear;
     background-image: url("./img/pergaminhoTexto2.png");
     background-size: cover;
 
@@ -110,11 +110,10 @@ body {
     0% {
         top: -100px;
     }
-
-    60% {
+    20%{
         top: -100px;
-
     }
+
 
     100% {
         top: 200px;
@@ -134,7 +133,7 @@ body {
     font-size: 70px;
     font-family: 'Lora', serif;
     letter-spacing: 3px;
-    animation: opacityText 5s linear;
+    animation: opacityText 4s linear;
     z-index: 1;
 }
 
@@ -178,6 +177,7 @@ body {
 
 .painelHistoria {
     height: 100vh;
+    margin-bottom: 50px;
 }
 
 .historia,
@@ -219,7 +219,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 900px;
+    width: calc(100% - 100px);
+    padding: 0 80px;
 }
 
 .imgBlur {
@@ -229,7 +230,7 @@ p {
     filter: blur(6px);
     z-index: -1;
     width: calc(100% - 100px);
-    height: 600px;
+    height: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -535,7 +536,7 @@ h3 {
 
 
 
-@media screen and (max-width:580px) {
+@media screen and (max-width:850px) {
 
     .logoPaixao {
         display: none;
@@ -552,22 +553,91 @@ h3 {
 
     /*home*/
     .imgFundoAnimacao {
-        height: 230px;
+       
     }
+
     .caixaImgFogo {
-        width: 400px;
+        width: 700px;
         height: 70px;
         animation: textPosition 2s linear;
         margin: 0 auto;
+        top: 300px;
     }
 
     .caixaImgFogo h1 {
-        font-size: 40px;
+        font-size: 3em;
         letter-spacing: 0;
-        animation: opacityText 4s linear;
+        animation: opacityText 5s linear;
         margin: 0;
     }
 
+}
+
+@media screen and (max-width:650px) {
+
+    .caixaImgFogo {
+        width: 500px;
+
+    }
+
+}
+@media screen and (max-width:450px) {
+
+    .caixaImgFogo {
+        width: 400px;
+    }
+
+    .caixaImgFogo h1 {
+        font-size: 35px;
+    }
 
 
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    /* painelHistoria */
+
+    p {
+        font-size: 13px;
+    }
+
+    .conteudo {
+        height: 800px;
+    }
+
+    .conteudoTextImg {
+        padding: 60px 15px;
+    }
+
+    .imgBlur {
+        width: calc(100% - 10px);
+        height: calc(100% - 100px);
+    }
+
+    .imgHistoria {
+        width: 100%;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    p {
+        font-size: 10px;
+    }
+
+    .imgHistoria {
+        height: 180px;
+    }
+
+}
+
+
+@media screen and (max-height:800px) {
+    .imgBlur {
+        width: calc(100% - 10px);
+        height: calc(100% - 100px);
+    }
 }
