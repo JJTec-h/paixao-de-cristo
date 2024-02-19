@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     background-color: #000000;
@@ -13,7 +19,7 @@ body {
     height: 90vh;
     width: 100%;
     position: relative;
-    background-image: url("../img/fundo.jpg");
+    background-image: url("img/fundo.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -31,13 +37,14 @@ body {
 
 .imgFundoAnimacao {
     width: 100%;
-    max-width: 1000px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: -20px;
-    animation: move 3s linear;
+    bottom: -2px;
+    animation: move 3s linear;  
 }
+
+
 
 @keyframes move {
     0% {
@@ -45,7 +52,7 @@ body {
     }
 
     100% {
-        bottom: 0px;
+        bottom: 10px;
     }
 
 }
@@ -100,7 +107,7 @@ body {
     color: white;
     text-align: center;
     animation: textPosition 3s linear;
-    background-image: url("./img/pergaminhoTexto2.png");
+    background-image: url("img/pergaminhoTexto2.png");
     background-size: cover;
 
 }
@@ -124,7 +131,7 @@ body {
 }
 
 .caixaImgFogo h1 {
-    background-image: url("../img/flame.gif");
+    background-image: url("img/flame.gif");
     background-size: contain;
     color: transparent;
     background-clip: text;
@@ -575,8 +582,8 @@ h3 {
     }
 
     /*home*/
-    .imgFundoAnimacao {}
 
+  
     .caixaImgFogo {
         width: 700px;
         height: 70px;
@@ -598,6 +605,15 @@ h3 {
 
 @media screen and (max-width:650px) {
 
+    .imgFundoAnimacao{
+        content: url('img/fundoAnimacaoMobile.png');
+      
+    }
+   
+
+    .caixaImgFogo {
+        top: 150px;
+    }
     .caixaImgFogo {
         width: 500px;
 
@@ -684,6 +700,12 @@ h3 {
 }
 
 @media screen and (max-width:500px) {
+
+    .caixaImgFogo {
+        top: 200px;
+    }
+  
+   
     p {
         font-size: 10px;
     }
@@ -747,7 +769,7 @@ h3 {
         display: flex;
         justify-content: space-around;
         position: absolute;
-        right: 5px;
+        right: 25px;
         bottom: 5px;
     }
 
