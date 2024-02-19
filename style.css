@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,7 +41,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     bottom: -2px;
-    animation: move 3s linear;  
+    animation: move 3s linear;
 }
 
 
@@ -211,7 +211,6 @@ p {
 }
 
 .conteudo {
-    border: solid #C4A135;
     border-radius: 10px;
     width: calc(100% - 50px);
     max-width: 1400px;
@@ -227,8 +226,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(100% - 100px);
-    padding: 0 80px;
+    padding: 0 100px;
 }
 
 .imgBlur {
@@ -237,8 +235,8 @@ p {
     background-position: center;
     filter: blur(6px);
     z-index: -1;
-    width: calc(100% - 100px);
-    height: 700px;
+    width: calc(100% - 30px);
+    height: 750px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -251,8 +249,9 @@ p {
     background-image: url('./img/imgPaixao.jpg');
     background-size: cover;
     background-position: center;
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 350px;
+    margin: 10px 0;
 }
 
 
@@ -308,25 +307,32 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 500px;
     height: auto;
+    align-items: center; 
+}
+
+.painelPatrocinadores h2{
+    margin-top: 50px;
 }
 
 .gridPatrocinadores {
     margin: 0 auto;
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: 300px;
-    gap: 30px;
+    gap: 100px;
     width: calc(100% - 50px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }
 
-.gridPatrocinadores div {
-    background-color: rgb(177, 177, 177);
-    border-radius: 10px;
+.gridPatrocinadores img {
     width: 250px;
+   
 }
+
 
 
 .painelContatos {
@@ -350,6 +356,7 @@ h3 {
 
 .textContatos h2 {
     color: #4C4223;
+    margin-top: 50px;
 }
 
 .textContatos p {
@@ -364,6 +371,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 200px;
+    margin-top: 20px;
 }
 
 .painelLinksContatos div {
@@ -394,7 +402,7 @@ h3 {
 }
 
 .iconContato img {
-    width: 25px;
+    width: 35px;
     margin-bottom: 5px;
     cursor: pointer;
 }
@@ -583,7 +591,7 @@ h3 {
 
     /*home*/
 
-  
+
     .caixaImgFogo {
         width: 700px;
         height: 70px;
@@ -601,31 +609,44 @@ h3 {
 
 
 
+
+    .conteudoTextImg {
+        padding: 0 20px;
+    }
+
+    .imgHistoria {
+        width: 400px;
+        height: 250px;
+    }
+
+
+
 }
 
 @media screen and (max-width:650px) {
 
-    .imgFundoAnimacao{
+    .imgFundoAnimacao {
         content: url('img/fundoAnimacaoMobile.png');
-      
+
     }
-   
+
 
     .caixaImgFogo {
         top: 150px;
     }
+
     .caixaImgFogo {
         width: 500px;
 
     }
 
-     /* data e local */
+    /* data e local */
 
-     .data{
+    .data {
         height: 300px;
     }
 
-    .mapa{
+    .mapa {
         height: 250px;
     }
 
@@ -642,7 +663,11 @@ h3 {
     }
 
 
+
+
+
 }
+
 
 
 
@@ -668,18 +693,18 @@ h3 {
     }
 
     .imgHistoria {
-        width: 100%;
+        width: calc(100% - 50px);
         height: 230px;
     }
 
 
     /* contatos */
 
-    .painelPatrocinadores{
+    .painelPatrocinadores {
         margin-bottom: 100px;
     }
 
-    .imgPergamino{
+    .imgPergamino {
         width: 500px;
         height: 500px;
     }
@@ -688,15 +713,22 @@ h3 {
         font-size: 30px;
     }
 
-    .conteudoPergaminho{
-        height: 350px;
+    .conteudoPergaminho {
+        height: 300px;
         margin-bottom: 50px;
     }
 
-    .textFinal p{
+    .textFinal p {
         font-size: 25px;
     }
+
+
+    .gridPatrocinadores {
+      
+        margin-top: 100px;
+    }
     
+
 }
 
 @media screen and (max-width:500px) {
@@ -704,8 +736,8 @@ h3 {
     .caixaImgFogo {
         top: 200px;
     }
-  
-   
+
+
     p {
         font-size: 10px;
     }
@@ -715,55 +747,56 @@ h3 {
     }
 
 
-     /* contatos */
+    /* contatos */
 
-     .painelPatrocinadores{
+    .painelPatrocinadores {
         margin-bottom: 20px;
     }
 
-    .imgPergamino{
+    .imgPergamino {
         width: 400px;
         height: 400px;
     }
 
     .textContatos h2 {
         font-size: 25px;
+        margin: 20px 0 ;
     }
 
-    .conteudoPergaminho{
-        height:150px;
+    .conteudoPergaminho {
+
         margin-bottom: 50px;
     }
 
-    .textFinal p{
+    .textFinal p {
         font-size: 18px;
     }
 
-    .painelLinksContatos{
+    .painelLinksContatos {
         margin: 20px 0 10px 0
     }
 
     /* rodape */
-    .rodaPe{
+    .rodaPe {
         height: 100px;
     }
 
-    .rodaPe p{
+    .rodaPe p {
         font-size: 4px;
         bottom: 3px;
-        
+
     }
 
-    .painelImg{
+    .painelImg {
         width: 70px;
         height: 70px;
     }
 
     .imgLogo {
         width: 65px;
-        height: 65px;    
+        height: 65px;
     }
-    
+
     .painelImjJJTech {
         width: 30px;
         display: flex;
@@ -777,8 +810,8 @@ h3 {
         width: 10px;
         cursor: pointer;
     }
-    
-    
+
+
 
 }
 
