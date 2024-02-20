@@ -7,11 +7,20 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 body {
     margin: 0 auto;
     background-color: #000000;
     height: 1000px;
     position: relative;
+}
+
+.visible {
+    opacity: 0;
+    transition: opacity 0.5 ease-in-out;
 }
 
 
@@ -186,6 +195,7 @@ body {
 .painelHistoria {
     height: 100vh;
     margin-bottom: 50px;
+   
 }
 
 .historia,
@@ -309,10 +319,10 @@ h3 {
     justify-content: center;
     margin-bottom: 500px;
     height: auto;
-    align-items: center; 
+    align-items: center;
 }
 
-.painelPatrocinadores h2{
+.painelPatrocinadores h2 {
     margin-top: 50px;
 }
 
@@ -330,7 +340,8 @@ h3 {
 
 .gridPatrocinadores img {
     width: 250px;
-   
+
+
 }
 
 
@@ -724,10 +735,10 @@ h3 {
 
 
     .gridPatrocinadores {
-      
+
         margin-top: 100px;
     }
-    
+
 
 }
 
@@ -760,7 +771,7 @@ h3 {
 
     .textContatos h2 {
         font-size: 25px;
-        margin: 20px 0 ;
+        margin: 20px 0;
     }
 
     .conteudoPergaminho {

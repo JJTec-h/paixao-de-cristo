@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paixão de Cristo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
 
 <body>
+   
 
     <div class="painelMenu ">
         <img class="menu" src="img/menu.png" alt="">
 
         <nav class="linksPaginaMobile">
-            <a class="links" href="#historia">Historia</a>
-            <a class="links" href="#evento">Evento</a>
-            <a class="links" href="#patrocinadores">Patrocinadores</a>
-            <a class="links" href="#contatos">Contatos</a>
+            <a class="links  smooth-scroll" href="#historia">Historia</a>
+            <a class="links  smooth-scroll" href="#evento">Evento</a>
+            <a class="links  smooth-scroll" href="#patrocinadores">Patrocinadores</a>
+            <a class="links  smooth-scroll" href="#contatos">Contatos</a>
         </nav>
 
         <a href="#home">
@@ -40,10 +40,10 @@
 
 
         <nav class="linksPagina">
-            <a href="#historia">Historia</a>
-            <a href="#evento">Evento</a>
-            <a href="#patrocinadores">Patrocinadores</a>
-            <a href="#contatos">Contatos</a>
+            <a href="#historia" class="smooth-scroll">Historia</a>
+            <a href="#evento" class="smooth-scroll">Evento</a>
+            <a href="#patrocinadores" class="smooth-scroll">Patrocinadores</a>
+            <a href="#contatos" class="smooth-scroll">Contatos</a>
         </nav>
 
         <div class="caixaImgFogo">
@@ -57,7 +57,7 @@
     </header>
 
     <main>
-        <section id="historia" class="painelHistoria">
+        <section id="historia" class="painelHistoria animate__animated animate__fadeInUp">
             <div class="historia">
 
                 <h2>Historia</h2>
@@ -159,7 +159,7 @@
 
         </section>
 
-        <section id="contatos" class="painelContatos">
+        <section id="contatos" class="painelContatos" >
             <div class="imgPergamino">
 
                 <div class="conteudoPergaminho">
@@ -171,15 +171,24 @@
                     <div class="iconContato">
                         <div class="painelLinksContatos">
                             <div>
-                                <img src="img/whatsapp.png" alt="">
+                                <a href="https://api.whatsapp.com/send?phone=+55(83)87673933">
+                                    <img src="img/whatsapp.png" alt="">
+                                </a>
+
                                 <p>Whatsapp</p>
                             </div>
                             <div>
-                                <img src="./img/instagram.png" alt="">
+                                <a href="https://www.instagram.com/paixaodecristorsa/">
+                                    <img src="./img/instagram.png" alt="">
+                                </a>
+
                                 <p>Intagram</p>
                             </div>
                             <div>
-                                <img src="img/email.png" alt="">
+                                <a href="mailto:paixaodecristorsa@gmail.com">
+                                    <img src="img/email.png" alt="">
+                                </a>
+
                                 <p>Email</p>
                             </div>
                         </div>
@@ -221,7 +230,7 @@
 
         </footer>
 
-
+       
         <script src="script.js"></script>
 </body>
 
