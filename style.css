@@ -17,6 +17,7 @@ body {
     background-color: #000000;
     height: 1000px;
     position: relative;
+    
 }
 
 .visible {
@@ -100,6 +101,7 @@ body {
     font-size: 16px;
     transition: 0.2s;
     border: black;
+    
 }
 
 .linksPagina a:hover {
@@ -273,13 +275,20 @@ p {
 
 
 
-.imgHistoria {
-    background-image: url('./img/imgPaixao.jpg');
+.imgHistoria1, .imgHistoria2 {
     background-size: cover;
     background-position: center;
     width: 700px;
     height: 350px;
     margin: 10px 0;
+}
+
+.imgHistoria1{
+    background-image: url('./img/imgPaixao.jpg');
+}
+
+.imgHistoria2{
+    background-image: url('./img/imgPaixao3.jpg');
 }
 
 
@@ -455,7 +464,7 @@ p {
 
 .textFinal p {
     color: #4C4223;
-    font-family: 'Berkshire Swash';
+    font-family: "Alice", serif;
     font-size: 35px;
     margin: 0;
 }
@@ -559,10 +568,11 @@ p {
 }
 
 .linksPaginaMobile a {
-    padding: 14px;
-    color: black;
+    padding: 15px;
+    color: rgb(0, 0, 0);
     font-size: 18px;
-    font-family: 'Berkshire Swash';
+    font-family: "Alice", serif;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
     background-image: url('./img/pergaminhoTexto2.png');
@@ -640,7 +650,7 @@ p {
         padding: 0 20px;
     }
 
-    .imgHistoria {
+    .imgHistoria1, .imgHistoria2 {
         width: 400px;
         height: 250px;
     }
@@ -720,7 +730,7 @@ p {
     }
 
 
-    .imgHistoria {
+    .imgHistoria1, .imgHistoria2 {
         width: 100%;
         height: 230px;
     }
@@ -775,7 +785,7 @@ p {
         font-size: 10px;
     }
 
-    .imgHistoria {
+    .imgHistoria1, .imgHistoria2 {
         height: 180px;
     }
 
