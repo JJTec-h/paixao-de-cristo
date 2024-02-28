@@ -101,7 +101,7 @@ body {
     font-size: 16px;
     transition: 0.2s;
     border: black;
-    
+    font-family: "Alice", serif
 }
 
 .linksPagina a:hover {
@@ -203,11 +203,11 @@ body {
 }
 
 .painelHistoria .imgBlur{
-    background-image: url('./img/imgPaixao.jpg');
+    background-image: url('img/imgPaixao.jpg');
 }
 
 .painelEvento .imgBlur{
-    background-image: url('./img/imgPaixao2.jpg');
+    background-image: url('img/imgPaixao2.jpg');
 }
 
 .historia,
@@ -284,11 +284,11 @@ p {
 }
 
 .imgHistoria1{
-    background-image: url('./img/imgPaixao.jpg');
+    background-image: url('img/imgPaixao.jpg');
 }
 
 .imgHistoria2{
-    background-image: url('./img/imgPaixao3.jpg');
+    background-image: url('img/imgPaixao3.jpg');
 }
 
 
@@ -569,9 +569,8 @@ p {
 
 .linksPaginaMobile a {
     padding: 15px;
-    color: rgb(0, 0, 0);
     font-size: 18px;
-    font-family: "Alice", serif;
+    color: black;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -591,6 +590,11 @@ p {
 .menuAtivo {
     width: 50%;
     transition: 1s;
+   
+}
+
+.menuAtivo, .linksPaginaMobile{
+    font-family: "Alice", serif;
 }
 
 .menu {
