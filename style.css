@@ -120,7 +120,7 @@ body {
     transform: translate(-50%);
     color: white;
     text-align: center;
-    animation: textPosition 3s linear;
+    animation: textPosition 2s linear;
     background-image: url("img/pergaminhoTexto2.png");
     background-size: cover;
 
@@ -155,7 +155,7 @@ body {
     font-size: 70px;
     font-family: "Alice", serif;
     letter-spacing: 5px;
-    animation: opacityText 4s linear;
+    animation: opacityText 3s linear;
     z-index: 1;
 }
 
