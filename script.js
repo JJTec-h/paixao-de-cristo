@@ -12,13 +12,13 @@ function scrollToAnchor(event) {
 
         });
     }
-    console.log('ola')
+    
 }
 
 const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
 smoothScrollLinks.forEach(function (link) {
     link.addEventListener("click", scrollToAnchor);
-    console.log('ola')
+   
 
 });
 
